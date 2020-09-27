@@ -10,7 +10,7 @@ Feature: Todo
     And I type 'Test' in title textbox in todoapp activity
     And I type 'Note test' in note textbox in todoapp activity
     And I click on the save button in todoapp activity
-    Then Task 'Test' is created
+    Then Task is created
 
   Scenario: As user
   I want to search a task

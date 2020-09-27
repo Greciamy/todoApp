@@ -8,6 +8,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 
 import java.net.MalformedURLException;
 
@@ -41,7 +42,7 @@ public class MyStepdefs {
         taskActivity.addTaskButton.click();
     }
 
-    @Then("^Task '(.*)' is created$")
+    @Then("^Task is created$")
     public void taskTestIsCreated() {
         Assert.assertTrue("ERROR, la tarea no fue creada", mainActivity.isCreatedTask());
     }
@@ -53,7 +54,7 @@ public class MyStepdefs {
 
     @And("^I type '(.*)' in search textbox in todoapp activity$")
     public void iTypeTestInSearchTextboxInTodoappActivity(String value) throws MalformedURLException {
-        searchActivity.searchTextbox.type(value+"\n");
+        searchActivity.searchTextbox.type(value + "\\n");
     }
 
     @Then("^Search shows elements found$")
