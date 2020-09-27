@@ -5,10 +5,6 @@ package appiumControl;
 
         import java.net.MalformedURLException;
 
-/**
- * @autor : eynar.pari
- * @date : 19/09/2020.
- **/
 public class Control {
 
     protected WebElement control;
