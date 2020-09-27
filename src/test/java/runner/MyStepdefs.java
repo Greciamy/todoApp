@@ -58,6 +58,6 @@ public class MyStepdefs {
 
     @Then("^Search shows elements found$")
     public void searchShowsElements() throws MalformedURLException {
-        Assert.assertTrue("ERROR, no se encontro ninguna tarea", searchActivity.countResults().equals(1));
+        Assert.assertTrue("ERROR, no se encontro ninguna tarea", searchActivity.countResults().equals("1"));
     }
 }

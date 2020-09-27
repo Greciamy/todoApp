@@ -15,8 +15,8 @@ public class Android implements  IDevice {
         capabilities.setCapability("deviceName", "HUAWEI Mate 8");
         capabilities.setCapability("platformVersion", "7.0");
         capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("appPackage", "com.vrproductiveapps.whendo");
         capabilities.setCapability("appActivity",".ui.HomeActivity");
-        capabilities.setCapability("platformName","Android");
 
         AppiumDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
